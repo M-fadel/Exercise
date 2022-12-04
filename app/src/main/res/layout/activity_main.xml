@@ -12,9 +12,9 @@
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
        android:id="@+id/Price"
-       android:text="Coast or Total price"
        app:layout_constraintStart_toStartOf="parent"
        app:layout_constraintTop_toTopOf="parent"
+       android:hint="Coast or Total price"
        ></EditText>
    <TextView
        android:layout_width="wrap_content"
@@ -61,11 +61,21 @@
     android:checked="false"
     ></Switch>
    <Button
+       android:id="@+id/calcualt"
        android:layout_width="match_parent"
        android:layout_height="wrap_content"
-      android:text="CUALCLATE VAT"
+      android:text="CALCuLATE VAT"
        app:layout_constraintStart_toStartOf="parent"
        app:layout_constraintTop_toBottomOf="@id/Switch"></Button>
+   
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       tools:text="@string/totalAmount"
+      android:id="@+id/total"
+       app:layout_constraintTop_toBottomOf="@+id/calcualt"
+       app:layout_constraintEnd_toEndOf="parent"
+       ></TextView>
 
 
 
